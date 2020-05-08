@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Calculatrice</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>Calculs</h1>
+            <h2> Choisir les nombres</h2>
+            <p>
+				Cliquez sur les boutons
+				<input type="button" value="0" onClick="choix(1,0)">
+				<input type="button" value="1" onClick="choix(1,1)">
+				<input type="button" value="2" onClick="choix(1,2)">
+				<input type="button" value="3" onClick="choix(1,3)">
+				<input type="button" value="4" onClick="choix(1,4)">
+				<input type="button" value="5" onClick="choix(1,5)">
+				<input type="button" value="6" onClick="choix(1,6)">
+				<input type="button" value="7" onClick="choix(1,7)">
+				<input type="button" value="8" onClick="choix(1,8)">
+				<input type="button" value="9" onClick="choix(1,9)">
+			</p>
+
+
+           
+        <h2>
+			<p>Opérations
+				<input type ="button" value="+" onClick="calc('+')">
+				<input type ="button" value="-" onClick="calc('-')">
+				<input type ="button" value="*" onClick="calc('*')">
+				<input type ="button" value="/" onClick="calc('/')">
+			</p>
+			<p> 
+				Validez 
+				<input type ="button" value="OK" onClick="res()">
+			</p>
+			<p id="resultat"></p>
+		</h2>
+        
+	</body>
+	<script src="./script.js"></script>
+    
+    
+</html>
