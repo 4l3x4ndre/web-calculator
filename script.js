@@ -2,7 +2,7 @@ var n1 = ''
 var n2 = ''
 var op
 function choix(a,x){
-	if (a == 1 && typeof op === "undefined"){
+	if (a === 1 && typeof op === "undefined"){
 		n1 += x;
 	}
 	else{
@@ -12,15 +12,20 @@ function choix(a,x){
 }
 
 function calc(ch){
+	if (n1 === '') {
+		alert("Veuillez saisir un calcul entier")
+		return
+	}
 	op = ch;
 }
 
 
 function res(){
-	if (n1 === '') {
-		n1 = '1'
-	}
 	if (typeof op === "undefined" || n2 ==='') {
+		n1 = ''
+		n2 = ''
+		op = undefined
+		alert("Veuillez saisir un calcul entier")
 		return
 	}
 
