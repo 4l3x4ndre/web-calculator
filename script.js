@@ -1,8 +1,8 @@
 var n1 = ''
 var n2 = ''
 var op
-function choix(a,x){
-	if (a === 1 && typeof op === "undefined"){
+function choix(x){
+	if (typeof op === "undefined"){
 		n1 += x;
 	}
 	else{
